@@ -22,7 +22,7 @@ class Player(CircleShape):
         return [a, b, c]
 
     def update(self, dt):
-        self.shot_timer -= dt
+        self.shoot_timer -= dt
         keys = pygame.key.get_pressed()
 
         if keys[pygame.K_w] or keys[pygame.K_UP]:
